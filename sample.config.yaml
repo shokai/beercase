@@ -14,4 +14,4 @@ objects :
     'beer.wav' : 50
     'cup.wav' : 300
 
-api : 'http://masui.sfc.keio.ac.jp/gyaco'
+api : 'http://example.com/gyaco'
