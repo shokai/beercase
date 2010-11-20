@@ -1,0 +1,8 @@
+*~
+public/files
+*.wav
+*.mp3
+#*
+*#
+.*
+*.lock
