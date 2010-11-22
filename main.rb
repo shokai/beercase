@@ -70,7 +70,7 @@ EventMachine::run do
     loop do
       break if calibrate
       g = (zv-weight)/g1
-      puts "weight : #{g} (g)"
+      puts "weight : #{g} (g)".color(:green)
       if median < 1.5 # センサ値平均がガタついてない時
         conf['objects'].each{|k,v|
           if v-5 < g and g < v+5 # 重さがほぼ同じ
@@ -91,7 +91,7 @@ EventMachine::run do
           puts 'detect => !empty!'.color(200,0,0)
         end
       end
-      sleep 4
+      sleep 1
     end
   end
 
