@@ -73,7 +73,7 @@ EventMachine::run do
       puts "weight : #{g} (g)".color(:green)
       if median < 1.5 # センサ値平均がガタついてない時
         conf['objects'].each{|k,v|
-          if v-5 < g and g < v+5 # 重さがほぼ同じ
+          if v-300 < g and g < v+300 # 面倒なのでマッチのレンジを超広くした
             if last_upload != k # 同じ物をアップロードしない
               puts "detect => #{k.split(/\./).first}".color(0,0,200)
               puts "upload #{k}"

@@ -11,7 +11,7 @@ weights :
 # 音声ファイル : 重さ
 # wavsディレクトリ下のファイルがアップロードされる
 objects :
-    'beer.mp3' : 526
-    'egg.mp3' : 300
+    'beer.mp3' : 350
+#    'egg.mp3' : 300
 
 api : 'http://example.com/gyaco'
